@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <article>
+        <h1>forms</h1>
+        <p>forms are a way to get user data</p>
+        <p>the general structure of a form is: </p>
+        <!-- 
+            <form>
+                <label>label describing the input</label>
+                <input type="inputType"/>
+            </from>
+            
+         -->
+
+        <h2>there are many types of inputs</h2>
+        <!-- text/default -->
+        <label for="">text input</label>
+        <input type="text">
+
+        <!-- number -->
+        <label for="">number input</label>
+        <input type="number" name="" id="">
+
+        <!-- date -->
+        <label for="">date input</label>
+        <input type="date" name="" id="">
+
+        <!-- email -->
+        <label for="">email</label>
+        <input type="email" name="" id="">
+
+        <!-- password -->
+        <label for="">password</label>
+        <input type="password" name="" id="">
+
+        <h3>multiple choice input</h3>
+        <p>until now we wrote only single value into input.
+            what if we want to select a value from multiple options?
+        </p>
+
+        <!-- radio -->
+        <label for="">radio</label>
+        <input type="radio" value="Male" name="gender">
+        <input type="radio" value="Female" name="gender">
+        <input type="radio" value="Other" name="gender">
+        <!-- what happens if there is not "name" attr or the value of name is diff? -->
+
+        <p>semantically, we can group multiple inputs inside:</p>
+        <form action="">
+            <fieldset>
+                <legend> general label for all the fields</legend>
+                <label for="">1</label>
+                <input type="text">
+                <label for="">2</label>
+                <input type="text">
+            </fieldset>
+        </form>
+
+
+        <!-- submitting and resetting the form -->
+
+        <!-- this will submit the form based on the action prop -->
+        <input type="submit">
+
+        <!-- this will reset all values inside a form -->
+        <input type="reset">
+
+        <!-- example -->
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>user details</legend>
+                <label for="age">age</label>
+                <input type="number" name="age" id="age">
+                <label for="name">name</label>
+                <input type="text" name="name">
+                <h4>gender</h4>
+                <label for="gander">male</label>
+                <input type="radio" name="gender" id="Male" value="Male">
+                <label for="gander">female</label>
+                <input type="radio" name="gender" id="Female" value="Female">
+                <label for="gander">other</label>
+                <input type="radio" name="gender" id="Other" value="Other">
+            </fieldset>
+            <input type="reset">
+            <input type="submit">
+        </form>
+
+    </article>
+    <h2>inputs</h2>
+</body>
+
+</html>
