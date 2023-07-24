@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="itc" />
+    <style>
+      #outer {
+        width: 100px;
+        height: 100px;
+        background: darkcyan;
+        position: relative;
+        margin: 50px;
+      }
+      #inner {
+        width: 50px;
+        height: 50px;
+        background: lightgreen;
+        position: absolute;
+        top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="inner"></div>
+      </div>
+    </div>
+
+    <!--  Q: explain in your own words what is the problem.
+              A: the inner box is positioned in relation to the body, which is the closest ancestor. in order to postion it in relation to the outer box we need to add postion to the outer box.
+         -->
+  </body>
+</html>

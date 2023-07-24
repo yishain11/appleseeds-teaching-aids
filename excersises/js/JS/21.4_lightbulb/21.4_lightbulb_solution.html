@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        height: 400px;
+        width: 400px;
+      }
+    </style>
+    <img
+      class="light-bulb"
+      onclick="lightBulbFunc()"
+      src="https://cdn2.iconfinder.com/data/icons/web-technology-outline/100/outline_light_off_lamp-512.png"
+      alt="light-bulb-off"
+    />
+  </body>
+  <script>
+    const lightBulbFunc = () => {
+      const img = document.querySelector('.light-bulb');
+      if (
+        img.src ===
+        'https://cdn2.iconfinder.com/data/icons/web-technology-outline/100/outline_light_off_lamp-512.png'
+      ) {
+        img.src =
+          'https://cdn2.iconfinder.com/data/icons/web-technology-colors/100/color_light_off_lamp-512.png';
+      } else {
+        img.src =
+          'https://cdn2.iconfinder.com/data/icons/web-technology-outline/100/outline_light_off_lamp-512.png';
+      }
+    };
+  </script>
+</html>
+<!-- 
+better code:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light</title>
+  </head>
+  <body>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+​
+      lamp {
+        height: 400px;
+        width: 400px;
+        display: inline-block;
+        background-image: url(https://cdn2.iconfinder.com/data/icons/web-technology-outline/100/outline_light_off_lamp-512.png);
+        background-size: 100% 100%;
+      }
+      lamp.on {
+        background-image: url(https://cdn2.iconfinder.com/data/icons/web-technology-colors/100/color_light_off_lamp-512.png);
+      }
+    </style>
+​
+    <lamp />
+​
+  </body>
+  <script>
+    window.onload = () => {
+      const lamp = document.querySelector('lamp');
+      lamp.addEventListener('click', function() {
+        this.classList.toggle('on');
+      })
+    };
+  </script> -->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container > div {
+        padding: 1rem;
+        border-radius: 20px;
+        color: white;
+        font-weight: bolder;
+      }
+      .container {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: repeat(8, 1fr);
+        padding: 2rem;
+        grid-gap: 20px;
+
+        grid-template-areas:
+          'hd hd hd hd hd hd hd  hd'
+          'sd sd mn mn mn mn sd2 sd2'
+          'ft ft ft ft ft ft ft  ft';
+      }
+      @media (max-width: 1024px) {
+        .container {
+          grid-template-areas:
+            'hd  hd  hd  hd  hd  hd  hd  hd'
+            'sd  sd  mn  mn  mn  mn  mn  mn'
+            'sd2 sd2 sd2 sd2 sd2 sd2 sd2 sd2'
+            'ft  ft  ft  ft  ft  ft  ft  ft';
+        }
+      }
+      @media (max-width: 600px) {
+        .container {
+          grid-template-areas:
+            'hd hd hd hd hd hd hd hd'
+            'sd sd sd sd sd sd sd sd'
+            'mn mn mn mn mn mn mn mn'
+            'sd2 sd2 sd2 sd2 sd2 sd2 sd2 sd2'
+            'ft ft ft ft ft ft ft ft';
+        }
+      }
+
+      .header {
+        background: red;
+        grid-area: hd;
+      }
+      .sidebar {
+        background: blue;
+        grid-area: sd;
+      }
+      .content {
+        background: green;
+        grid-area: mn;
+      }
+      .sidebar-2 {
+        background: purple;
+        grid-area: sd2;
+      }
+      .footer {
+        background: yellow;
+        grid-area: ft;
+      }
+    </style>
+    <div class="container">
+      <div class="header"><h2>Header</h2></div>
+      <div class="sidebar"><h2>Sidebar</h2></div>
+      <div class="content">
+        <h2>Content</h2>
+        <h2>
+          More content than we had before so this column is now quite tall
+        </h2>
+      </div>
+      <div class="sidebar-2"><h2>Sidebar 2</h2></div>
+      <div class="footer"><h2>Footer</h2></div>
+    </div>
+  </body>
+</html>

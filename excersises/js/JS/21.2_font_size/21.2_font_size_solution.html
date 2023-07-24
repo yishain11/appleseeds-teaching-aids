@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4 id="text">Hello everybody!</h4>
+    <button data-plus>+</button><button data-minus>-</button>
+    <button id="x">hi</button>
+
+    <script>
+      const getButton = document.querySelector("#x");
+      getButton.onclick = () => {
+        console.log("hello");
+      };
+      getButton.onclick = () => {
+        console.log("hi");
+      };
+
+      const increase = document.querySelector("[data-plus]");
+      const decrease = document.querySelector("[data-minus]");
+      const text = document.querySelector("#text");
+      let fontSize = parseInt(window.getComputedStyle(text).fontSize);
+
+      increase.addEventListener("click", () => {
+        if (fontSize < 100) {
+          fontSize += 5;
+          text.style.fontSize = `${fontSize}px`;
+        }
+      });
+
+      decrease.addEventListener("click", () => {
+        if (fontSize > 6) {
+          fontSize -= 5;
+          text.style.fontSize = `${fontSize}px`;
+        }
+      });
+
+      // var buttons = document.querySelector(".button");
+      // var target = document.getElementById("text");
+      // console.log(window.getComputedStyle(target).fontSize);
+      // var fontSize = parseInt(window.getComputedStyle(target).fontSize);
+      // for (var i = 0; i < buttons.length; i++) {
+      //   buttons[i].addEventListener("click", function (event) {
+      //     var text = event.target.textContent;
+      //     if (fontSize < 100 && text === "+") {
+      //       fontSize += 5;
+      //       target.style.fontSize = `${fontSize}px`;
+      //     } else if (fontSize > 6 && text === "-") {
+      //       fontSize -= 5;
+      //       target.style.fontSize = `${fontSize}px`;
+      //     }
+      //   });
+      // }
+      // const myFunc1 = () => {
+      //   var target = document.getElementById("text");
+      //   console.log(window.getComputedStyle(target).fontSize);
+      //   var fontSize = parseInt(window.getComputedStyle(target).fontSize);
+      // };
+    </script>
+  </body>
+</html>

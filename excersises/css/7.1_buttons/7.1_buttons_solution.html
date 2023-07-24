@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Buttons</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+      }
+      body {
+        background-color: #2b4865;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      div {
+        margin: 1rem;
+      }
+      button {
+        border: none;
+        margin: 1rem 4rem;
+      }
+      .container {
+        max-width: 85%;
+        margin: auto;
+      }
+      .title {
+        font-size: 2rem;
+      }
+      .register {
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+
+      .submit {
+        padding: 0.6rem;
+        font-size: 1rem;
+      }
+      .ghost {
+        background-color: transparent;
+        border-width: 2px;
+      }
+      .round {
+        border-radius: 50px;
+      }
+
+      #flat .register {
+        background-color: #4285f4;
+      }
+      #flat .register:hover {
+        background-color: #4286f4a6;
+      }
+      #flat-ghost .register {
+        border: 2px #ea4335 solid;
+      }
+      #flat-ghost .register:hover {
+        background-color: #ea4335;
+      }
+      #round .register {
+        background-color: #34a853;
+      }
+      #round .register:hover {
+        background-color: #34a853ae;
+      }
+      #round-ghost .register {
+        border: 2px #fcc628 solid;
+      }
+      #round-ghost .register:hover {
+        background-color: #fcc628;
+      }
+
+      #flat .submit {
+        background-color: #ffc54d;
+      }
+      #flat .submit:hover {
+        background-color: #ffc54dc5;
+      }
+      #flat-ghost .submit {
+        border: 2px #bd4291 solid;
+      }
+      #flat-ghost .submit:hover {
+        background-color: #bd4291;
+      }
+      #round .submit {
+        background-color: #f94c66;
+      }
+      #round .submit:hover {
+        background-color: #f94c66c5;
+      }
+      #round-ghost .submit {
+        border: 2px #53bf9d solid;
+      }
+      #round-ghost .submit:hover {
+        background-color: #53bf9d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="flat">
+        <div class="title">Flat</div>
+        <div class="button-section">
+          <button class="flat register">Register</button>
+          <button class="flat submit">Submit</button>
+        </div>
+      </div>
+      <div id="round">
+        <div class="title">Round</div>
+        <div class="button-section">
+          <button class="round register">Register</button>
+          <button class="round submit">Submit</button>
+        </div>
+      </div>
+      <div id="flat-ghost">
+        <div class="title">Flat Ghost</div>
+        <div class="button-section">
+          <button class="flat register ghost">Register</button>
+          <button class="flat ghost submit">Submit</button>
+        </div>
+      </div>
+      <div id="round-ghost">
+        <div class="title">Round Ghost</div>
+        <div class="button-section">
+          <button class="round ghost register">Register</button>
+          <button class="round ghost submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

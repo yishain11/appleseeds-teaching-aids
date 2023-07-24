@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          * {
+            background-color: lightgrey;
+            padding: 0;
+            margin: 0;
+          }
+          body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+          .box {
+            height: 400px;
+            width: 400px;
+            background: darkblue;
+            position: relative;
+          }
+          .box::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background: red;
+          }
+          .box:hover::after {
+            background: purple;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="box"></div>
+      </body>
+    </html>
+  </body>
+</html>

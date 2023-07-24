@@ -1,0 +1,20 @@
+{
+  "name": "appleseeds-teaching-aids",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yishain11/appleseeds-teaching-aids.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yishain11/appleseeds-teaching-aids/issues"
+  },
+  "homepage": "https://github.com/yishain11/appleseeds-teaching-aids#readme"
+}

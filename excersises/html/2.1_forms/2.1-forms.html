@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Create an Account</title>
+  </head>
+
+  <body>
+    <h1>Create an Account</h1>
+
+    <form action="#">
+      <div>
+        <label for="email">Email:</label>
+        <br />
+
+        <!-- id gives us access to for. name is to get access with js -->
+        <!-- show them different types on input -->
+        <input id="email" type="email" name="email" />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <br />
+        <input id="password" type="password" name="password" />
+      </div>
+
+      <div>
+        <label for="age">Age:</label>
+        <br />
+        <select id="age" name="age">
+          <option value="">Select Age</option>
+          <option value="group1">Under 18</option>
+          <option value="group2">18 to 30</option>
+          <option value="group3">31 to 45</option>
+          <option value="group4">46+</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="about">Tell us a little about yourself:</label>
+        <br />
+        <textarea id="about" name="about" rows="5" cols="50"></textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" name="accepts_tos" value="yes" /> I agree to the
+        <a href="#" target="_blank">terms of service</a>
+      </div>
+
+      <div>
+        <input type="submit" value="Sign up" />
+      </div>
+    </form>
+  </body>
+</html>

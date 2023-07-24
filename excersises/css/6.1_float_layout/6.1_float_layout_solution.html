@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        border: 1px solid black;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .container > div {
+        padding: 1rem;
+      }
+      .navbar {
+        background: orange;
+        border: 1px solid black;
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .side {
+        border: 1px solid black;
+        float: left;
+        /* margin-right: 5px; */
+        width: 30%;
+        height: 250px;
+        background: green;
+      }
+      /* @media only screen and (max-width: 500px) {
+        .side {
+          display: none;
+        }
+      } */
+
+      .main {
+        border: 1px solid black;
+        float: right;
+        background: purple;
+        width: calc(70% - 5px);
+        height: 250px;
+        margin-bottom: 5px;
+        text-align: right;
+      }
+      /* @media only screen and (max-width: 500px) {
+        .main {
+          width: 100%;
+        }
+      } */
+      .footer {
+        clear: both;
+        margin-bottom: 5px;
+        background: blue;
+        border: 1px solid black;
+        text-align: center;
+      }
+      /* .clear {
+        clear: both;
+      } */
+    </style>
+    <div class="container">
+      <nav class="navbar">Header</nav>
+      <aside class="side">Side</aside>
+      <main class="main">Main</main>
+      <!-- <div class="clear"></div> -->
+
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

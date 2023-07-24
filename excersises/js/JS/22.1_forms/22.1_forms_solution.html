@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Confirm Form</title>
+    <style>
+      .form {
+        position: relative;
+      }
+
+      .submit-btn {
+        margin-top: 5%;
+      }
+
+      .container .row {
+        margin: 5px 0;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container form">
+      <div class="row">
+        <div class="col-xs-4">
+          What is your name?
+        </div>
+        <div class="col-xs-4">
+          <input id="urname" type="text" placeholder="name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          How old are you?
+        </div>
+        <div class="col-xs-4">
+          <input id="age" type="number" placeholder="age" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          Email address
+        </div>
+        <div class="col-xs-4">
+          <input id="email" type="text" placeholder="email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 submit-btn">
+          <button onclick="confirmForm()">Submit!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      function confirmForm() {
+        var name = document.getElementById("urname").value;
+        var age = document.getElementById("age").value;
+        var email = document.getElementById("email").value;
+        var message =
+          name + ", are you " + age + " and your email is " + email + " ?";
+        var isConfirmed = confirm(message);
+        if (isConfirmed) {
+          window.alert("congratulations you successfully sent this form");
+        }
+      }
+    </script>
+  </body>
+</html>

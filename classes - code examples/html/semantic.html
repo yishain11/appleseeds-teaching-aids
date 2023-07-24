@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Semantic HTML Page (Good Example)</title>
+</head>
+
+<body>
+
+    <!-- GOOD EXAMPLE -->
+
+    <!-- The <header> element represents the header of the page or section. -->
+    <header>
+        <!-- The <nav> element represents a navigation menu. -->
+        <nav>
+            <ul>
+                <!-- The <li> element represents a list item. -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- The <main> element represents the main content of the page. -->
+    <main>
+        <!-- The <section> element represents a section of content. -->
+        <section id="home">
+            <!-- The <h1> to <h6> elements represent headings of varying levels. -->
+            <h1>Welcome to Our Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et malesuada libero.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a passionate team dedicated to providing the best service to our clients.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Graphic Design</li>
+                <li>SEO Optimization</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <!-- The <form> element represents a form, in this case, a contact form. -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- The <footer> element represents the footer of the page or section. -->
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+
+
+    <!-- BAD EXAMPLE -->
+    <!-- Header -->
+    <div id="header">
+        <div id="logo">Company Logo</div>
+        <div id="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Home Section -->
+        <div class="section" id="home">
+            <h1>Welcome to Our Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et malesuada libero.</p>
+        </div>
+
+        <!-- About Section -->
+        <div class="section" id="about">
+            <h2>About Us</h2>
+            <p>We are a passionate team dedicated to providing the best service to our clients.</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="section" id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Graphic Design</li>
+                <li>SEO Optimization</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" required><br>
+
+                <label>Email:</label>
+                <input type="email" required><br>
+
+                <label>Message:</label><br>
+                <textarea rows="4" cols="50" required></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>

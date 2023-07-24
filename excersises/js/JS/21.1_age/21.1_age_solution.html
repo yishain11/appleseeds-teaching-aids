@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>User age</title>
+  </head>
+
+  <body>
+    <div>
+      <label>Your Age</label>
+      <input id="age" type="text" placeholder="18" />
+      <button>Click Me!</button>
+      <h5 id="drink-label"></h5>
+    </div>
+
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        console.log("hi");
+        let label = "you're too young";
+        if (parseInt(document.querySelector("#age").value) >= 18) {
+          label = "you can drink";
+        }
+        document.querySelector("#drink-label").innerHTML = label;
+      });
+    </script>
+  </body>
+</html>
