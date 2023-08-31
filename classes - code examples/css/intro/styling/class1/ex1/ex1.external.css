@@ -1,0 +1,15 @@
+p {
+  color: green;
+}
+
+div p {
+  color: red;
+}
+
+#pId {
+  color: purple;
+}
+
+.pClass {
+  color: yellow;
+}

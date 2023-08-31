@@ -1,0 +1,39 @@
+header {
+  background-color: rgb(212, 200, 31);
+}
+
+header nav a {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+main {
+  background-color: rgb(134, 218, 252);
+  color: black;
+}
+
+.el1 {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(150, 133, 36);
+  border: 1px solid black;
+  margin: auto;
+  padding: 40px;
+  line-height: 150px;
+}
+
+.el2 {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(150, 133, 36);
+  border: 3px dotted rgb(56, 36, 122);
+  border-radius: 5px;
+}
+
+.el3 {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(75, 0, 251);
+  border: 2px dashed rgb(196, 15, 187);
+  border-radius: 5px;
+}

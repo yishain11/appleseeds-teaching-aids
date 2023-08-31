@@ -1,0 +1,44 @@
+div {
+  color: red;
+}
+
+#first {
+  color: blue;
+}
+
+#sec {
+  color: green;
+}
+
+p {
+  color: aquamarine;
+}
+
+div.myClass {
+  color: chartreuse;
+}
+
+div p {
+  color: blueviolet;
+}
+
+.firstClass {
+  color: chocolate;
+  text-decoration: underline;
+}
+
+span {
+  color: darkgreen;
+}
+
+span#divId {
+  color: darkkhaki;
+}
+
+span.divId {
+  color: darkred;
+}
+
+a#myLink {
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+p {
+  color: green;
+}
+
+div p {
+  color: red;
+}
+
+p#spanPId {
+  color: blue;
+}
+
+p.myClass {
+  color: purple;
+}

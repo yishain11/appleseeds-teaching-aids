@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.item {
+  background-color: rgb(219, 195, 114);
+  border: 1px solid lightcyan;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.it1 {
+  order: 1;
+}
+
+.it2 {
+  order: 2;
+  flex-grow: 2;
+}

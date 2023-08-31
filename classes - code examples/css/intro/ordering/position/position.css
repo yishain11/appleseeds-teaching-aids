@@ -1,0 +1,65 @@
+.container {
+  background-color: rgb(17, 184, 101);
+  height: 100px;
+  width: 400px;
+  /* position: relative; */
+}
+
+.header {
+  background-color: rgb(11, 7, 204);
+}
+
+.main {
+  background-color: rgb(221, 218, 14);
+}
+
+.footer {
+  background-color: rgb(199, 29, 100);
+}
+
+.header-relative {
+  background-color: rgb(11, 7, 204);
+  position: relative;
+  left: 10px;
+}
+.container-abs {
+  background-color: rgb(17, 184, 101);
+  height: 100px;
+  width: 400px;
+  /* position: relative; */
+}
+
+.header-abs {
+  background-color: rgb(11, 7, 204);
+  position: absolute;
+  left: 50px;
+  /* top: 10px; to show its relative to closest non static container */
+}
+
+.container-fx {
+  background-color: rgb(17, 184, 101);
+  height: 1500px;
+  width: 400px;
+  /* position: relative; */ /*to show relative to closest non static*/
+}
+
+.header-fx {
+  background-color: rgb(11, 7, 204);
+  position: fixed;
+  top: 0;
+}
+
+.container-sticky {
+  background-color: rgb(17, 184, 101);
+  height: 1500px;
+  width: 5500px;
+  margin-top: 100px;
+}
+
+.header-sticky {
+  position: sticky;
+  background-color: rgb(11, 7, 204);
+  top: 0;
+  /* width: 100px;
+  left: 10px; */
+}

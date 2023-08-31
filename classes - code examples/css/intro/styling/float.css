@@ -1,0 +1,11 @@
+form {
+  width: 50%;
+}
+
+label {
+  float: left;
+}
+
+input {
+  float: right;
+}

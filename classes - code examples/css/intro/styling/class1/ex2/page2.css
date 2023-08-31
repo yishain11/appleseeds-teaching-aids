@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(193, 180, 248);
+  color: black;
+}
+
+#element1 {
+  border: 2px solid rgb(245, 144, 12);
+  font-size: 15px;
+}
+#element2 {
+  border: 1px dotted rgb(22, 71, 2);
+  font-size: 35px;
+}
+#element3 {
+  border: 3px dashed rgb(51, 4, 78);
+  font-size: 55px;
+}

@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 5px;
+  justify-content: center;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "cell1 cell2 cell2"
+    "cell3 cell4 cell5";
+}
+
+.grid-el {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(36, 62, 120);
+  border: 2px solid lightcyan;
+}
+
+.el1 {
+  grid-area: cell1;
+}
+
+.el2 {
+  grid-area: el2;
+  width: auto;
+}
+.el3 {
+  grid-area: el3;
+}
+.el4 {
+  grid-area: el4;
+}
+.el5 {
+  grid-area: el5;
+}

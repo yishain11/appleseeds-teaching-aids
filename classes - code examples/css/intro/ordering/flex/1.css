@@ -1,0 +1,28 @@
+.container {
+  background-color: rgb(35, 116, 182);
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.el {
+  background-color: rgb(241, 25, 126);
+  color: white;
+  border: 3px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.container3 {
+  display: flex;
+}
+
+.el5 {
+  order: 2;
+}
+
+.el6 {
+  order: 1;
+}

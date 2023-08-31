@@ -1,0 +1,29 @@
+.container1 {
+  background-color: rgb(36, 59, 32);
+  color: seashell;
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.el {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(33, 175, 121);
+  text-align: center;
+  line-height: 100px;
+}
+
+.container2 {
+  background-color: rgb(27, 18, 78);
+  color: seashell;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}

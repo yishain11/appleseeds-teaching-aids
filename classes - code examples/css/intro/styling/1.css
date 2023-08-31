@@ -1,0 +1,9 @@
+span {
+  color: red;
+}
+span#id1 {
+  color: green;
+}
+span.class1 {
+  color: orange;
+}

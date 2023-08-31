@@ -1,0 +1,29 @@
+div {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(18, 138, 7);
+  color: white;
+}
+
+div#first {
+  padding: 15px 13px 10px 11px;
+}
+
+div#sec {
+  margin: 50px;
+}
+
+div#third {
+  width: 100px;
+  height: 150px;
+}
+
+div#centerContent {
+  text-align: center;
+  line-height: 200px;
+}
+
+div#centerElement {
+  margin: auto;
+}

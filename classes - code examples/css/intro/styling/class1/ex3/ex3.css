@@ -1,0 +1,20 @@
+div {
+  background-color: #f0f4f8;
+  border: 1px solid #9cb8d0;
+  direction: rtl;
+  width: 300px;
+  color: #075cab;
+  margin: 10px;
+}
+
+div.headline {
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  background-color: #889bac;
+}
+
+li {
+  list-style-type: circle;
+}

@@ -1,0 +1,71 @@
+.container {
+  position: relative;
+  height: 200vh;
+  background-color: rgb(214, 54, 54);
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(26, 24, 141);
+  position: fixed;
+  top: 0;
+  color: white;
+  z-index: 1000;
+}
+
+aside {
+  margin-top: 50px;
+}
+
+.el1-left {
+  background-color: rgb(224, 202, 2);
+  border-radius: 5px 5px;
+  border: 3px solid green;
+  width: 30%;
+  position: absolute;
+  top: 5px;
+}
+
+.el2-left {
+  background-color: rgb(20, 196, 202);
+  border: 3px solid rgb(94, 10, 150);
+  border-radius: 40px 10px;
+  width: 30%;
+  position: absolute;
+  top: 55px;
+}
+
+.el1-right {
+  position: relative;
+  right: 100;
+  background-color: rgb(3, 59, 15);
+  color: violet;
+  left: 70%;
+  width: 30%;
+  height: 100px;
+  font-size: 50px;
+}
+
+.el2-right {
+  position: relative;
+  left: 70%;
+  background-color: rgb(7, 24, 56);
+  color: rgb(109, 75, 109);
+  width: 30%;
+  height: 100px;
+  font-size: 50px;
+}
+
+footer {
+  background-color: rgb(26, 11, 42);
+  color: white;
+  position: sticky;
+  top: 0;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+p,
+a {
+  display: inline;
+}

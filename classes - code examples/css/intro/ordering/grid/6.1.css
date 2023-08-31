@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 5px;
+  justify-content: center;
+  grid-template-rows: repeat(2, auto);
+}
+
+.grid-el {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(36, 62, 120);
+  border: 2px solid lightcyan;
+}
+
+.el2 {
+  grid-area: 1/2/1/4;
+  width: auto;
+}
