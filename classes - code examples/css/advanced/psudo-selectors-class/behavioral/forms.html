@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="forms.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>form psudos</h3>
+    <form action="#">
+      <label for="text1">text placeholder</label>
+      <input
+        type="text"
+        id="text1"
+        name="text1"
+        placeholder="placeholer shown"
+      />
+      <label for="checked">Checked</label>
+      <input type="checkbox" name="checked" id="checked" />
+      <br />
+      <label for="email">email change when valid</label>
+      <input type="email" name="email" id="email" />
+      <br />
+      <label for="text">text - change when invalid</label>
+      <input type="text" name="text" id="text" minlength="10" />
+      <br />
+      <label for="text">text - required</label>
+      <input type="text" name="text" id="text" required />
+    </form>
+  </body>
+</html>

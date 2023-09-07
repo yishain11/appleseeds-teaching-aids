@@ -1,0 +1,32 @@
+.container {
+  width: 800px;
+  height: 800px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.container:hover .ball {
+  animation: bounce 2s reverse;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translate(300px, 700px);
+  }
+
+  75% {
+    background: yellow;
+  }
+
+  100% {
+    transform: translate(700px, 0);
+  }
+}

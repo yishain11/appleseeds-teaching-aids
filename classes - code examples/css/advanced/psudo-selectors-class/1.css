@@ -1,0 +1,10 @@
+div.myDv::before {
+  content: " ";
+}
+div.myDv::after {
+  content: "'";
+}
+
+div.myDv::selection {
+  background-color: green;
+}

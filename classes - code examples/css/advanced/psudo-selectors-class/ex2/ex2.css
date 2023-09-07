@@ -1,0 +1,25 @@
+table {
+  border-spacing: 0;
+  width: 80%;
+}
+
+th:nth-child(2n) {
+  background-color: rgb(70, 194, 111);
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr {
+  background-color: rgb(231, 229, 229);
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+td {
+  text-align: center;
+}

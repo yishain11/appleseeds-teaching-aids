@@ -20,19 +20,22 @@
 .header-relative {
   background-color: rgb(11, 7, 204);
   position: relative;
-  left: 10px;
+  left: 520px;
 }
+
 .container-abs {
   background-color: rgb(17, 184, 101);
   height: 100px;
   width: 400px;
-  /* position: relative; */
+  margin-top: 10px;
+  position: relative;
 }
 
 .header-abs {
   background-color: rgb(11, 7, 204);
   position: absolute;
   left: 50px;
+  top: 0;
   /* top: 10px; to show its relative to closest non static container */
 }
 
@@ -40,7 +43,8 @@
   background-color: rgb(17, 184, 101);
   height: 1500px;
   width: 400px;
-  /* position: relative; */ /*to show relative to closest non static*/
+  /* position: relative; */
+  /*to show relative to closest non static*/
 }
 
 .header-fx {

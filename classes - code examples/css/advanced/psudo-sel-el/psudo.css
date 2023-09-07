@@ -1,0 +1,29 @@
+p#before::before {
+  content: "added before";
+  color: red;
+}
+
+p#after::after {
+  content: "added after";
+  color: red;
+}
+
+p#firstLetter::first-letter {
+  color: red;
+}
+
+p#firstLine {
+  width: 150px;
+}
+
+p.firstLine::first-line {
+  color: red;
+}
+
+input::placeholder {
+  color: red;
+}
+
+p.selection::selection {
+  background-color: yellow;
+}

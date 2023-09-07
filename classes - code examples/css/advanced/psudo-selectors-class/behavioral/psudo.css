@@ -1,0 +1,17 @@
+a:link {
+  color: rgb(255, 238, 0);
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  font-weight: 900;
+}
+
+.sections {
+  background-color: rgb(16, 24, 99);
+}
+
+p:target {
+  background-color: green;
+}

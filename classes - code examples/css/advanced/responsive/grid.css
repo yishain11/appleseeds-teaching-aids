@@ -1,0 +1,12 @@
+.grid-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.el {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(243, 155, 13);
+  border: 1px solid black;
+}

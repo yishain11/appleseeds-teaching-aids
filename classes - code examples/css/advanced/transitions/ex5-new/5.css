@@ -1,0 +1,38 @@
+nav {
+  margin: auto;
+}
+
+a {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(2, 52, 85);
+  color: white;
+  transition: background-color 2s ease-out, color 2s ease-out,
+    font-size 2s ease-out;
+}
+
+a:hover {
+  background-color: rgb(190, 184, 248);
+  color: black;
+  font-size: 30px;
+}
+
+main {
+  margin: auto;
+}
+.el {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(247, 221, 151);
+  color: black;
+  border: 1px solid black;
+  transition: width 3s ease-out 1s, height 3s ease-out 1s;
+}
+
+.el:hover {
+  background-color: #a18a05;
+  color: white;
+  font-size: 30px;
+  width: 500px;
+  height: 500px;
+}

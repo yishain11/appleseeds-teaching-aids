@@ -1,0 +1,13 @@
+.container {
+  height: 1500px;
+  width: 80%;
+  background-color: rgba(34, 165, 22, 0.513);
+}
+
+.el {
+  margin-top: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(18, 34, 124);
+  color: white;
+}

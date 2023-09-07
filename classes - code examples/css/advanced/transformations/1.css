@@ -1,0 +1,6 @@
+.line {
+  width: 100px;
+  height: 10px;
+  background-color: rgb(216, 34, 34);
+  transform: translate();
+}

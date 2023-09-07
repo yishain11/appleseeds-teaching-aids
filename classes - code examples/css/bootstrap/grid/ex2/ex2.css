@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+}
+
+.container {
+  margin-top: 10%;
+  height: 80%;
+}
+
+.cell {
+  height: 100px;
+  background-color: rgb(243, 192, 96);
+  border: 1px solid black;
+  border-radius: 5px;
+}

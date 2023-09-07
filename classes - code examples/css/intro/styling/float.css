@@ -1,9 +1,7 @@
 form {
   width: 50%;
-}
-
-label {
-  float: left;
+  background-color: green;
+  margin: auto;
 }
 
 input {

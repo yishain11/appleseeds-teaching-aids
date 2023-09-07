@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Welcome</h1>
+        <div class="Asymbol">A</div>
+        <div class="formContainer">
+          <form action="#">
+            <div class="formField">
+              <input name="username" id="username" type="text" />
+              <label for="username" id="usernameLabel">username</label>
+            </div>
+            <div class="formField">
+              <input name="pass" id="pass" type="password" />
+              <label for="pass">password</label>
+            </div>
+            <div class="formField">
+              <input name="passconfirm" id="passconfirm" type="password" />
+              <label for="passconfirm">password confirm</label>
+            </div>
+            <div class="formField">
+              <input name="email" id="email" type="email" />
+              <label for="email">Email</label>
+            </div>
+            <h4>Gender</h4>
+            <div class="radioContainer">
+              <label for="male">male</label>
+              <input type="radio" name="gender" id="male" />
+              <label for="female">female</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="other">other</label>
+              <input type="radio" name="gender" id="other" />
+            </div>
+            <div class="formField">
+              <label for="agree">do you agree to terms?</label>
+              <input type="checkbox" name="agree" id="agree" />
+            </div>
+            <button type="submit">Signup</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

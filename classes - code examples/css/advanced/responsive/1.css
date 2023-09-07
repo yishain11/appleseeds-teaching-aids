@@ -1,0 +1,18 @@
+.el {
+  background-color: red;
+  width: 60%;
+}
+
+@media (min-width: 500px) {
+  .el {
+    background-color: rgb(51, 255, 0);
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .el {
+    background-color: rgb(243, 208, 9);
+    width: 60%;
+  }
+}

@@ -1,0 +1,12 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  transition: width 3s linear;
+}
+
+.box:hover {
+  background-color: yellow;
+  font-size: 100px;
+  width: 500px;
+}

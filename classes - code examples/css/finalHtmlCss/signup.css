@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(228, 227, 227);
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  box-shadow: black 4px;
+  width: 40%;
+}
+
+h1 {
+  margin: auto;
+}
+
+.Asymbol {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 40px;
+  width: 8%;
+  margin: auto;
+}
+
+.formContainer {
+  width: 60%;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus + label {
+  transform: translateY(-15px);
+}
+
+.radioContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  width: 40%;
+  margin: auto;
+}
+
+.formField {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.formField label {
+  order: 1;
+}
+
+.formField input {
+  order: 2;
+}
+
+input[type="checkbox"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

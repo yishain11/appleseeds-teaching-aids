@@ -1,0 +1,50 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.stripe1 {
+  background-color: rgb(21, 101, 104, 0.4);
+  width: 100px;
+  height: 100px;
+}
+
+.transform {
+  margin: auto;
+  margin-top: 300px;
+  /* transform: translate(100px, 100px); */
+  /* translate - move (x,y) */
+
+  /* scale - change demantions (x,y) */
+  /* transform: scale(2); */
+
+  /* skew - strech (x,y) */
+  /* transform: skewX(-70deg) scale(1, 8); */
+
+  /* rotate - move by deg, keep shape */
+  transform: rotate(20deg);
+}
+
+.stripe2 {
+  background-color: rgb(137, 147, 204);
+  width: 100px;
+  height: 100px;
+  transform: skewX(-70deg) scale(1, 8);
+}
+
+.stripe3 {
+  background-color: rgb(245, 198, 97);
+  width: 100px;
+  height: 100px;
+  transform: skewX(-70deg) scale(1, 8) translateX(900px);
+}
+
+.main {
+  position: relative;
+  margin: auto;
+  width: 800px;
+  height: 800px;
+  background-color: rgb(119, 10, 10);
+  border: 2px solid black;
+  z-index: 2;
+}

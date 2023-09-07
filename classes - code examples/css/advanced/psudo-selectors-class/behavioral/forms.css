@@ -1,0 +1,23 @@
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+input[type="text"]:placeholder-shown {
+  border: 3px solid red;
+}
+
+input[type="email"]:invalid {
+  border: 2px solid purple;
+}
+
+input[type="text"]:invalid {
+  border: 2px solid rgb(1, 74, 211);
+}
+
+input[type="email"]:valid {
+  border: 2px solid lightgreen;
+}
+
+input:required {
+  border: 4px solid yellow;
+}
